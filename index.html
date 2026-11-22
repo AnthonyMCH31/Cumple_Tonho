@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Tengo algo que decirte!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PANTALLA 1: EL SUSPENSO -->
+  <section id="pantalla-intro" class="pantalla activa">
+    <div class="caja-intro">
+      <div class="sombrero-intro">🥳</div>
+      <p class="subtitulo">Holaa <span class="nombre-invitado">Amigo/a</span> 👋</p>
+      <h1>Antes de que acabe el año, quisiera decirte algo...</h1>
+      <p class="pista">Prepárate porque este diciembre se viene una celebración muy especial.</p>
+      <button id="btn-abrir" class="btn-principal">🎉 Toca para abrir la sorpresa 🎉</button>
+    </div>
+  </section>
+
+  <!-- PANTALLA 2: LA TARJETA -->
+  <section id="pantalla-tarjeta" class="pantalla oculta">
+    <button id="btn-musica" class="btn-musica" title="Activar o silenciar piano">🎹 Feliz Cumple ON</button>
+
+    <!-- Decoraciones laterales izquierda -->
+    <aside class="lateral lateral-izq" aria-hidden="true">
+      <div class="item-deco deco-1">🎈</div>
+      <div class="item-deco deco-2">🥳</div>
+      <div class="item-deco deco-3">🎁</div>
+      <div class="item-deco deco-4">💜</div>
+      <div class="item-deco deco-5">🍰</div>
+      <div class="item-deco deco-6">✨</div>
+    </aside>
+
+    <!-- Columna principal con la tarjeta -->
+    <div class="tarjeta-contenedor">
+      <header class="encabezado-tarjeta">
+        <span class="hola-texto">Holaa</span>
+        <h2 class="nombre-invitado nombre-destacado">Marco</h2>
+      </header>
+
+      <div class="hexagono-mensaje">
+        <h3>¡Holaaa! 🎉💜</h3>
+        <p>
+          Quiero invitarte a compartir conmigo un día muy especial: ¡mi cumpleaños! 🥳🎂
+        </p>
+        <p>
+          Me haría muchísima ilusión que pudieras acompañarme en esta celebración. Será un momento para disfrutar, reírnos, escuchar buena música y crear recuerdos bonitos junto a las personas que aprecio.
+        </p>
+        <p>
+          Más que una fiesta, quiero que sea una oportunidad para compartir, disfrutar y pasar un rato increíble. Tu presencia sería un regalo muy especial para mí, porque valoro mucho tu amistad y todos esos momentos que hemos compartido.
+        </p>
+        <p>
+          Espero de corazón que puedas venir y celebrar conmigo. ¡Estoy seguro de que la pasaremos increíble!
+        </p>
+
+        <div class="detalles-evento">
+          <div class="dato">
+            <span class="etiqueta">📅 FECHA</span>
+            <span class="valor">Lunes 21 de diciembre</span>
+          </div>
+          <div class="divisor">🎊</div>
+          <div class="dato">
+            <span class="etiqueta">🕘 HORA</span>
+            <span class="valor">9:00 a. m.</span>
+          </div>
+        </div>
+
+        <p class="cierre">
+          <strong>¡Te espero con mucha ilusión! 💜🎈</strong><br>
+          Un abrazo enorme.<br>
+          <strong>Te quiero mucho.</strong>
+        </p>
+      </div>
+
+      <a id="btn-confirmar" href="#" target="_blank" class="btn-whatsapp">
+        ✅ Confirmar que voy por WhatsApp
+      </a>
+    </div>
+
+    <!-- Decoraciones laterales derecha (con pastel grande destacado) -->
+    <aside class="lateral lateral-der" aria-hidden="true">
+      <div class="item-deco deco-d1">🎈</div>
+      <div class="item-deco deco-d2">🎉</div>
+      <div class="item-deco deco-d3">🧁</div>
+      <div class="item-deco deco-d4">🎀</div>
+      <div class="item-deco pastel-principal">🎂</div>
+      <div class="item-deco deco-d6">🌟</div>
+    </aside>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
